@@ -13,59 +13,83 @@ Note that some of these packages are on CRAN and others are on GitHub, Bioconduc
 
 If you think that a package is missing from this list, please let us know through issues or pull requests in the [GitHub repository](https://github.com/cran-task-views/VisualizationStatic).
 
-## Table of contents
+### The underlying grid system
 
-- [Design systems](#design)
-- [Grouping of plots](#grouping)
-- [Themes to styling displays](#theming)
-- [Add-ons to lattice](#lattice)
-- [Add-ons to ggplot2](#ggplot2)
-- [Miscellaneous](#miscellaneous)
-- [Graphics resources and advice web sites](#advice)
+- `r pkg("grid", priority = "core")` | Implements the primitive graphical functions.
+- `r pkg("gtable", priority = "core")`
+- `r pkg("graphics", priority = "core")` (base) | The original graphics engine.
+- `r pkg("gridExtra")`
+- `r pkg("gridGraphics")` | Redraw Base Graphics Using 'grid' Graphics.
 
-## [Design systems]{#design}
 
-- `r package("graphics")` (base) | The original graphics engine.
-- `r package("grid")` | Implements the primitive graphical functions.
-- `r package("gridGraphics")` | Redraw Base Graphics Using 'grid' Graphics.
-- `r package("ggplot2")` | Create elegant data visualisations using the grammar of graphics. Built on the `grid` system.
-- `r package("lattice")` | Create data visualisations using the trellis method. Built on the `grid` system.
+### Lattice graphics
 
-## [Grouping of plots]{#grouping}
+- `r pkg("lattice")` | Create data visualisations using the trellis method. Built on the `grid` system.
+- `r pkg("latticeExtra")` | Extra graphical utilities based on lattice.
+- `r pkg("adegraphics")` | Lattice-based package for the representation of multivariate data.
+- `r pkg("loa")` | Lattice options and add-ons.
+- `r pkg("stripless")` | Structured trellis displays without strips for lattice graphics.
+- `r pkg("tactile")` | New and extended plots, methods, and panel functions for `r pkg("lattice")`
 
-- `r package("cowplot")` | Streamlined plot theme and plot annotations for `ggplot2`
-- `r package("gridExtra")`
-- `r package("patchwork")`
-- `r package("ggpubr")`
-- `r package("gtable")`
 
-## [Themes to styling displays]{#theming}
+### the ggplot2 ecosystem
 
-- `r package("basetheme")` | Themes for base graphics plots.
-- `r package("ggthemes")` | Extra themes, scales and geoms for `r package("ggplot2")`.
-- `r package("thematic")` | Unified and automatic theming of `r package("ggplot2")`, `r package("lattice")`, and `r package("base")` R Graphics
-- `r package("tvthemes")` | TV show themes and color palettes for `r package("ggplot2")` graphics
+- `r pkg("ggplot2", priority = "core")` | Create elegant data visualisations using the grammar of graphics. Built on the `grid` system.
 
-## [Add-ons to lattice]{#lattice}
+*layers/ geoms*
 
-- `r package("latticeExtra")` | Extra graphical utilities based on lattice.
-- `r package("adegraphics")` | Lattice-based package for the representation of multivariate data.
-- `r package("loa")` | Lattice options and add-ons.
-- `r package("stripless")` | Structured trellis displays without strips for lattice graphics.
-- `r package("tactile")` | New and extended plots, methods, and panel functions for `r package("lattice")`
+- `r pkg("ggbeeswarm")`
+- `r pkg("ggpointdensity")`
+- `r pkg("ggimg")`
+- `r pkg("geomtextpath")`
+- `r pkg("ggrepel")`
 
-## [Add-ons to ggplot2]{#ggplot2}
+*scales* 
 
-An extensive list with more than 100 add-ons for `r package("ggplot2")` is avilable at [the gallery of ggplot2 extensions](https://exts.ggplot2.tidyverse.org/gallery/). (We point to this rather than duplicate efforts.)
+- `r pkg("scales")`
+- `r pkg("ggnewscale")`
 
-## [Miscellaneous]{#miscellaneous}
+*arrange facet/panel/composition*
 
-`r package("vdiffr")` | Visual regression testing and graphical diffing with testthat
+- `r pkg("patchwork", priority = "core")`
+- `r pkg("sugrrants")`
+- `r pkg("geofacet")`
+- `r pkg("geogrid")`
+- `r pkg("ggside")`
 
-## [Graphics resources and advice web sites]{#advice}
+
+*theme*
+
+- `r pkg("basetheme")` | Themes for base graphics plots.
+- `r pkg("ggthemes")` | Extra themes, scales and geoms for `r pkg("ggplot2")`.
+- `r pkg("hrbrthemes")`
+- `r pkg("tvthemes")` | TV show themes and color palettes for `r pkg("ggplot2")` graphics
+- `r pkg("thematic")` | Unified and automatic theming of `r pkg("ggplot2")`, `r pkg("lattice")`, and `r pkg("base")` R Graphics
+
+*a colleciton of components*
+
+- `r pkg("GGally")`
+- `r pkg("cowplot")`
+- `r pkg("ggh4x")`
+
+*making ggplot2 easy*
+
+- `r pkg("ggpubr")`
+- `r pkg("ggeasy")`
+- `r pkg("esquisse")`
+- `r pkg("ggedit")`
+
+*test and programming with ggplot2*
+
+- `r pkg("vdiffr")`
+- `r pkg("ggtrace")`
+
+#### Graphics resources and advice web sites
 
 - [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org)
 - [Data Visualization: A practical introduction](https://socviz.co)
 - [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/)
 - [Graphical Data Analysis with R](http://www.gradaanwr.net)
 - [The R Graph Gallery](https://www.r-graph-gallery.com)
+
+
