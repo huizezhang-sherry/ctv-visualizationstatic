@@ -32,22 +32,37 @@ If you think that a package is missing from this list, please let us know throug
 - `r pkg("tactile")` | New and extended plots, methods, and panel functions for `r pkg("lattice")`
 
 
-### the ggplot2 ecosystem
+### The ggplot2 ecosystem
 
 - `r pkg("ggplot2", priority = "core")` | Create elegant data visualisations using the grammar of graphics. Built on the `grid` system.
+- `r pkg("GGally")`
+- `r pkg("cowplot")`
+- `r pkg("ggh4x")`
+- `r pkg("ggraph")` | An Implementation of Grammar of Graphics for Graphs and Networks
+- `r pkg("egg")`
+- `r pkg("ggforce")`
 
-*layers/ geoms*
+
+*stats/ geoms*
 
 - `r pkg("ggbeeswarm")`
 - `r pkg("ggpointdensity")`
 - `r pkg("ggimg")`
 - `r pkg("geomtextpath")`
 - `r pkg("ggrepel")`
+- `r pkg("ggridges")`
+- `r pkg("ggalluvial")`
+- `r pkg("ggdensity")`
+- `r pkg("gghalves")`
+- `r pkg("ggHoriPlot")`
+- `r pkg("ggip")`
+- `r pkg("gglorenz")`
 
 *scales* 
 
 - `r pkg("scales")`
 - `r pkg("ggnewscale")`
+ggfocus
 
 *arrange facet/panel/composition*
 
@@ -56,7 +71,7 @@ If you think that a package is missing from this list, please let us know throug
 - `r pkg("geofacet")`
 - `r pkg("geogrid")`
 - `r pkg("ggside")`
-
+- `r pkg("DHBins")`
 
 *theme*
 
@@ -66,30 +81,38 @@ If you think that a package is missing from this list, please let us know throug
 - `r pkg("tvthemes")` | TV show themes and color palettes for `r pkg("ggplot2")` graphics
 - `r pkg("thematic")` | Unified and automatic theming of `r pkg("ggplot2")`, `r pkg("lattice")`, and `r pkg("base")` R Graphics
 
-*a colleciton of components*
-
-- `r pkg("GGally")`
-- `r pkg("cowplot")`
-- `r pkg("ggh4x")`
-
 *making ggplot2 easy*
 
 - `r pkg("ggpubr")`
 - `r pkg("ggeasy")`
 - `r pkg("esquisse")`
 - `r pkg("ggedit")`
+- `r pkg("ggcharts")`
+
+*annotation*
+  
+- `r pkg("gghighlight")`
+
 
 *test and programming with ggplot2*
 
 - `r pkg("vdiffr")`
 - `r pkg("ggtrace")`
+- `r pkg("ggghost")`
+- `r pkg("gginnards")`
 
-#### Graphics resources and advice web sites
+### Other aspects not included in this Task view
+
+- color: to the color task view
+- dynamic: to the dynamic task view 
+
+### Graphics resources and advice web sites
 
 - [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org)
 - [Data Visualization: A practical introduction](https://socviz.co)
 - [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/)
 - [Graphical Data Analysis with R](http://www.gradaanwr.net)
 - [The R Graph Gallery](https://www.r-graph-gallery.com)
+- [ggplot2 extensions - gallery](https://exts.ggplot2.tidyverse.org/gallery/)
 
 
